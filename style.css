@@ -1,0 +1,169 @@
+/* ---------------------------
+   Miler Static Site Styles
+   --------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+:root {
+  --accent: #00C48C;
+  --text-dark: #111827;
+  --text-muted: #4B5563;
+  --bg-light: #F9FAFB;
+  --bg-white: #FFFFFF;
+}
+
+/* Reset + Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+  line-height: 1.6;
+  padding: 0;
+}
+
+/* Typography */
+h1, h2, h3 {
+  font-weight: 700;
+  margin-bottom: 0.5em;
+}
+
+h1 {
+  font-size: 2.2rem;
+}
+
+h2 {
+  font-size: 1.4rem;
+  color: var(--accent);
+}
+
+p {
+  color: var(--text-muted);
+  margin-bottom: 1em;
+  font-size: 1rem;
+}
+
+/* Layout Helpers */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header / Hero Section */
+header {
+  text-align: center;
+  padding: 60px 20px 20px;
+  background: var(--bg-white);
+  border-bottom: 1px solid #e5e7eb;
+}
+
+header img {
+  border-radius: 20px;
+  margin-bottom: 20px;
+  width: 100px;
+  height: 100px;
+}
+
+header h1 {
+  font-size: 2.4rem;
+  margin-bottom: 8px;
+}
+
+header h2 {
+  font-weight: 600;
+  margin-top: 0;
+}
+
+/* Button */
+.button {
+  display: inline-block;
+  margin-top: 24px;
+  padding: 14px 28px;
+  background-color: var(--accent);
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+
+.button:hover {
+  background-color: #00a576;
+}
+
+/* Legal / Content Pages */
+main {
+  padding: 40px 0;
+}
+
+main h1 {
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+
+main h2 {
+  margin-top: 1.5rem;
+  color: var(--accent);
+  font-size: 1.2rem;
+}
+
+main p {
+  margin-bottom: 1rem;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #6B7280;
+  margin-top: 60px;
+  padding: 40px 20px;
+  border-top: 1px solid #e5e7eb;
+}
+
+footer a {
+  color: #6B7280;
+  margin: 0 8px;
+}
+
+footer a:hover {
+  color: var(--accent);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+  header {
+    padding-top: 40px;
+  }
+
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  header h2 {
+    font-size: 1rem;
+  }
+
+  .button {
+    padding: 12px 22px;
+  }
+
+  main {
+    padding: 20px 0;
+  }
+}
